@@ -16,6 +16,7 @@ StringBooster
 - Function on `String` to uppercase its first character
 - Function on `String` to parse line-separated contents into an `Array`
 - Function on `String` to return whether or not the first character is a vowel
+- Function on `String` to convert it into title case
 
 ## License
 
