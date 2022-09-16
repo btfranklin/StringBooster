@@ -18,8 +18,8 @@ jobs:
     - name: Build iOS version
       run: xcodebuild -scheme StringBooster -destination 'platform=iOS Simulator,name=iPhone 13'
     - name: Build watchOS version
-      run: xcodebuild -scheme StringBooster -destination 'platform=watchOS Simulator,name=Any watchOS Device'
+      run: xcodebuild -scheme StringBooster -destination 'platform=watchOS Simulator,name=Apple Watch Series 7 - 41mm'
     - name: Build tvOS version
-      run: xcodebuild -scheme StringBooster -destination 'platform=tvOS Simulator,name=Any tvOS Device'
+      run: xcodebuild -scheme StringBooster -destination 'platform=tvOS Simulator,name=Apple TV 4K (2nd generation)'
     - name: Run tests
       run: swift test --verbose
