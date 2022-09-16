@@ -14,10 +14,8 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Build macOS version
-      run: swift build --verbose --sdk macos
-    - name: Run tests for macOS version
-      run: swift test --verbose --sdk macos
+      run: swift build --verbose
     - name: Build iOS version
-      run: swift build --verbose --sdk ios
-    - name: Run tests for iOS version
-      run: swift test --verbose --sdk ios
+      run: xcodebuild -scheme StringBooster -destination 'platform=iOS Simulator,OS=14.0,name=iPhone 8'
+    - name: Run tests
+      run: swift test --verbose
