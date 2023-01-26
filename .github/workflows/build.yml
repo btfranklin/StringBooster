@@ -16,10 +16,10 @@ jobs:
     - name: Build macOS version
       run: swift build --verbose
     - name: Build iOS version
-      run: xcodebuild -scheme StringBooster -destination 'platform=iOS Simulator,name=iPhone 13'
+      run: xcodebuild -scheme StringBooster -destination 'platform=iOS Simulator,name=Any iOS Simulator Device'
     - name: Build watchOS version
-      run: xcodebuild -scheme StringBooster -destination 'platform=watchOS Simulator,name=Apple Watch Series 7 - 41mm'
+      run: xcodebuild -scheme StringBooster -destination 'platform=watchOS Simulator,name=Any watchOS Simulator Device'
     - name: Build tvOS version
-      run: xcodebuild -scheme StringBooster -destination 'platform=tvOS Simulator,name=Apple TV 4K (2nd generation)'
+      run: xcodebuild -scheme StringBooster -destination 'platform=tvOS Simulator,name=Any tvOS Simulator Device'
     - name: Run tests
       run: swift test --verbose
