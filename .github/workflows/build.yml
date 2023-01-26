@@ -16,7 +16,7 @@ jobs:
     - name: Build macOS version
       run: swift build --verbose
     - name: Build iOS version
-      run: xcodebuild -scheme StringBooster -destination 'platform=iOS Simulator,name=Any iOS Simulator Device'
+      run: xcodebuild -scheme StringBooster -destination 'platform=iOS Simulator,id=dvtdevice-DVTiOSDeviceSimulatorPlaceholder-iphonesimulator:placeholder,name=Any iOS Simulator Device'
     - name: Build watchOS version
       run: xcodebuild -scheme StringBooster -destination 'platform=watchOS Simulator,name=Any watchOS Simulator Device'
     - name: Build tvOS version
