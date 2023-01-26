@@ -2,7 +2,7 @@
 
 extension String {
     public var firstUppercased: String {
-        guard let first = first else { return "" }
-        return String(first).uppercased() + dropFirst()
+        guard let first else { return self }
+        return String(first).uppercased() + self.dropFirst()
     }
 }
