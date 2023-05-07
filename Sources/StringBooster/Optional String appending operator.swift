@@ -14,7 +14,7 @@ extension Optional where Wrapped == String {
     /// - Parameters:
     ///   - lhs: The optional string (`String?`) to be updated.
     ///   - rhs: The non-optional string (`String`) to be added to the optional string.
-    static func ?= (lhs: inout String?, rhs: String) {
+    public static func ?= (lhs: inout String?, rhs: String) {
         // Check if the optional string has a value
         if let currentValue = lhs {
             // If it has a value, append the non-optional string to it
